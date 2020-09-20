@@ -1,0 +1,359 @@
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* common css */
+/* animated effect */
+
+.bounceIn {
+  animation-duration: 1500ms;
+  animation-delay: 200ms;
+}
+/*hover animation effect*/
+.card-img-hvr {
+  position: relative;
+}
+.card-hvr-icon-png {
+  padding: 108px 369px;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+}
+.card-hvr-icon-png:hover {
+  opacity: 1;
+  -webkit-animation: thing 1s;
+  -o-animation: thing 1s;
+  animation: thing 1s ease-in-out;
+}
+
+@keyframes thing {
+  from {
+    transform: rotate(0deg) scale(1, 1);
+  }
+  to {
+    transform: rotate(15deg) scale(1.2, 1.2);
+  }
+}
+
+/*hover animation effect*/
+/* scroll top to bottom */
+.scrollTop {
+  position: fixed;
+  right: 2%;
+  bottom: 94px;
+  background-color: #952538;
+  padding: 5px 11px;
+  opacity: 0;
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out 0s;
+}
+.scrollTop-icon {
+  font-size: 22px;
+  padding-top: 8px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+/* scroll top to bottom */
+
+/* top backgroung image */
+
+/* top backgroung image */
+
+/* top bar  */
+.topbar-bg {
+  background-color: #46344E;
+}
+
+.mx-auto.row.topbar-row {
+  width: 80%;
+}
+
+.logo_img {
+  display: block;
+}
+
+.topbar_right {
+  margin: auto;
+  justify-content: flex-end;
+}
+
+.topbar_right li{
+  padding: 0px 6px;
+}
+
+.topbar_right li a{
+  color: #fff;
+  font-size: 23px;
+}
+.topbar_right li a:hover{
+  color: #f2f2f2;
+}
+
+/* top bar  */
+/* navbar section */
+
+nav{
+  height: 6rem;
+  width: 100vw;
+  background-color: #0A1641;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: relative;
+  z-index: 10;
+  border-bottom: 4px solid #385D8A;
+}
+
+/*Styling logo*/
+.logo{
+  padding:1vh 1vw;
+  text-align: center;
+}
+.logo img {
+  height: 5rem;
+  width: 5rem;
+}
+
+/*Styling Links*/
+.nav-links{
+  display: flex;
+  list-style: none;
+  margin: auto;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav-links li a{
+  text-decoration: none;
+  margin: 0 0.7vw;
+  color: #D9F5FD;
+  font-size: 23px;
+  text-transform: capitalize;
+}
+.nav-links li a:hover {
+  color: #61DAFB;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #61DAFB;
+  position: absolute;
+  right: 15%;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+  transform-origin: left;
+}
+.nav-links li a:hover::before{
+  width: 80%;
+  transform-origin: left;
+}
+
+/*Styling Buttons*/
+.login-button{
+  background-color: transparent;
+  border: 1.5px solid #f2f5f7;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.login-button:hover {
+  color: #131418;
+  background-color: #f2f5f7;
+  border:1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+.join-button{
+  color: #131418;
+  background-color: #61DAFB;
+  border: 1.5px solid #61DAFB;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.join-button:hover {
+  color: #f2f5f7;
+  background-color: transparent;
+  border:1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+  width: 30px;
+  height:3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+  nav{
+      position: fixed;
+      z-index: 3;
+  }
+  .hamburger{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .nav-links{
+      position: fixed;
+      background: #131418;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+  .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .fade:not(.show) {
+    opacity: 1;
+}
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  li.fade{
+      opacity: 1;
+  }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+/* navbar section */
+
+/* product section */
+
+/* product section */
+/* news list section */
+
+/* news list section */
+/* blog section */
+/* blog section */
+/* contact us page*/
+
+/* contact us page*/
+/* products page */
+
+/* products page */
+
+/* blog view page */
+
+/* blog view page */
+
+/* single product page */
+
+/* single product page */
+
+/* footer section */
+
+/* footer section */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  //CSS
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  //CSS
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 412px) {
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/

@@ -523,9 +523,9 @@ nav{
 
 
 .ui-timepicker-container {
-  /*   position: absolute;
+    position: absolute;
     overflow: hidden;
-    box-sizing: border-box */
+    box-sizing: border-box 
   }
   
   .ui-timepicker,
@@ -832,7 +832,50 @@ nav{
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+@media (min-width: 1281px) and (max-width: 1366px) {
+ .logo_img {
+    display: block;
+    width: 60%;
+}
+.topbar_right li a {
+    font-size: 14px;
+}
+.nav-links li a {
+    font-size: 18px;
+}
+.bodyimg_title {
+    position: absolute;
+    transform: translate(-6%, 85%);
+    top: 50%;
+    left: 50%;
+}
+.galler_image img {
+    height: 300px;
+}
+.btn-ft-cn {
+    font-size: 25px;
+}
 
+.emaillnk_ftr a {
+    font-size: 18px;
+}
+.form-group .caret-down_in {
+
+    right: 1.4rem;
+}
+.rsp_psg{
+  padding: 0;
+}
+.rsp_psg span{
+  font-size: 16px;
+}
+.qtySelector .fa {
+    margin-right: 3px;
+}
+.qtySelector .qtyValue {
+    margin-right: 3px;
+}
+}
 @media (min-width: 1281px) {
   //CSS
 }

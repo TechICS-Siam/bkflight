@@ -17,16 +17,15 @@
   <link type="text/css" rel="stylesheet" href="css/all-fontawesome.css" />
   <!-- Google Fonts -->
   <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
   <!-- Material Design Bootstrap -->
   <link type="text/css" href="css/mdb.min.css" rel="stylesheet" />
   <!-- custom css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/css/intlTelInput.css">
   <link type="text/css" href="css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.css">
-
- 
-
 
 </head>
 
@@ -34,17 +33,17 @@
 <!-- top bar -->
 <section class="sticky-top">
   <div class="topbar-bg">
-    <div class="row mx-auto topbar-row">
-      <div class="col-lg-5 col-sm-6">
+    <div class="row mx-auto topbar-row d-flex justify-content-between">
+      <div class="col-lg-5 col-sm-12">
        <div class="nav-brand">
-         <img src="images/quantum_logo.png" class="logo_img" alt="">
+         <img src="images/quantum_logo.png" class="logo_img"  alt="">
        </div>
       </div>
-      <div class="col-lg-7 col-sm-6 m-auto">
-           <ul class="d-flex list-unstyled topbar_right">
-             <li><a href="tel:+44 2039 30 3438">+44 2039 30 3438 &nbsp; |</a></li>
-             <li><a href="mailto:info@quantum-aviation.co.uk">info@quantum-aviation.co.uk &nbsp; |</a></li> 
-             <li><a href="">Search</a></li>   
+      <div class="col-lg-5 col-sm-12 m-auto ">
+           <ul class="d-flex list-unstyled topbar_right row justify-content-between">
+             <li class="col-4 "><a href="tel:+44 2039 30 3438">+44 2039 30 3438 &nbsp; |</a></li>
+             <li class="col-6"><a href="mailto:info@quantum-aviation.co.uk">info@quantum-aviation.co.uk &nbsp; |</a></li> 
+             <li class="col-2"><a href="">Search</a></li>   
            </ul>
       </div>
     </div>
@@ -68,7 +67,7 @@
             
         </ul>
     </nav>
-  </section>
+</section>
           
 <!-- main navbar -->
 
@@ -272,7 +271,8 @@
                 <div class="col-lg-6">
                   <div class="form-group">
                     <i class="fas fa-plane-arrival departure_icon"></i>
-                    <input type="email" class="form-control from_bdr pl-5" id="exampleInputEmail1"  placeholder="To">                     
+                    <input type="email" class="form-control from_bdr pl-5" id="exampleInputEmail1"  placeholder="To"> 
+                    <small id="" class="form-text text-muted">Find Nearest Airport</small>                     
                   </div>
                 </div>
               </div>
@@ -407,22 +407,22 @@
 
 <!-- contact us section -->
 <section>
-  <div class="py-5 bg-white">
+  <div class="py-5">
     <form action="">
     <div class="row mx-auto">     
       <div class="col-lg-3 col-sm-6">
         <div class="form-group">
-          <input type="email" class="form-control from-contact" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control from-contact" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
         </div>
       </div>
       <div class="col-lg-3 col-sm-6">
         <div class="form-group">
-          <input type="email" class="form-control from-contact" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control from-contact" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
         </div>
       </div>
       <div class="col-lg-3 col-sm-6">
         <div class="form-group">
-          <input type="email" class="form-control from-contact" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="tel" class="form-control from-contact" id="phone">
         </div>
       </div>
       <div class="col-lg-3 col-sm-6">
@@ -432,27 +432,106 @@
       </div>
       <div class="col-lg-12 mt-5">
         <div class="form-group">
-          <textarea class="form-control from-contact-text" id="exampleFormControlTextarea1" rows="7" placeholder="comment"></textarea>
+          <textarea class="form-control from-contact-text " id="exampleFormControlTextarea1" rows="7" placeholder="comment"></textarea>
         </div>
       </div>
       <div class="col-lg-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-mybtn f">Send Your Enqury</button>
+      </div>
+      <div class="col-lg-12 p-0">
+       <hr class="liner_bttom"> 
       </div>
     </div>
   </form>
   </div>
 </section>
 <!-- contact us section -->
+<!-- footer section -->
+<section>
+  <div class="bg-footer">
+    <div class="row mx-auto py-5">
+      <div class="col-lg-9 col-sm-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="logoftr">
+              <img src="images/quantum_logo.png" class="mousy" alt="" width="100%">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="listle">
+              <p class="">Company</p>
+            </div>       
+            <ul class="list-unstyled list-ulftr">              
+              <li><a href="">About Us</a></li>
+              <li><a href="">Operational Support</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>          
+          </div>
+          <div class="col-md-3">
+            <div class="listle">
+              <p class="">Explore</p>
+            </div>
+            <ul class="list-unstyled list-ulftr">              
+              <li><a href="#">Aircraft Charter</a></li>
+              <li><a href="">Air Ambulance</a></li>
+              <li><a href="">Aircraft Management</a></li>
+              <li><a href="">Aircraft Directory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-4 mx-auto">
+        <div class="mx-auto ">
+          <button class="btn btn-ft-cn waves-effect waves-light">Contact Us</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mx-auto">
+      <div class="col-lg-6 mx-auto col-sm-12">
+        <div class="row emaillnk_row  pl-4">
+          <div class="col-md-6 p-0 d-inline-block text-right emaillnk_ftr-drp"> 
+            <p class="emaillnk_ftr">
+            <a href="mailto:info@quantum-aviation.co.uk"> Email: info@quantum-aviation.co.uk &nbsp; | &nbsp; 
+            </a>
+            </p>
+          </div>
+
+            
+          <div class="col-md-6 p-0">
+            <p class="emaillnk_ftr">
+             <a href="tel:+44 2039 30 3438">+44 2039 30 3438 </a>
+            </p> 
+            </div>
+          
+          
+        </div>
+      </div>
+      <div class="col-lg-10 col-sm-12 mx-auto">
+        <p class="f text-justify text-center emaillnk_ftrsd">
+          Quantum Aviation Services Ltd, a company registered in England (Company no 12196802), whose registered
+           office is: 20-22 Wenlock Road, London, N1 7GU, United Kingdom. VAT number: 334 2055 35 .
+        </p>
+      </div>
+      <div class="col-md-11 text-right">
+        <div class="">
+        <p class="techics">
+          Created and designed by <a href=""> TechICS.</a>
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer section -->
 
 
 <!-- scroll top to buttom -->
-
-  <div id="stop" class="scrollTop">
+<div id="stop" class="scrollTop">
     <span><a class="text-dark" href=""><i class="fas fa-angle-up scrollTop-icon"></i></a></span>
-  </div>
-  <!-- scroll top to buttom -->
+</div>
+<!-- scroll top to buttom -->
   
-  <!-- JQuery -->
+<!-- JQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
@@ -466,7 +545,6 @@
   <script type="text/javascript" src="js/top-scroll.js"></script>
   <!-- 3d mouse animate -->
   <script type="text/javascript" src="js/tilt.jquery.js"></script>
-
   <!-- navbar -->
   <script type="text/javascript" src="js/nav.js"></script>
   <!-- motion jquery -->
@@ -475,7 +553,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js" ></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/intlTelInput.js" ></script>
   <script type="text/javascript">
     AOS.init({
       offset: 300,
@@ -486,8 +564,8 @@
   <script type="text/javascript">
     $(document).ready(function () {
       $(".mousy").tilt({
-        maxTilt: 20,
-        scale: 1,
+        maxTilt: 10,
+        scale: 1.1,
         glare: false,
         maxGlare: 0.5,
       });
@@ -516,7 +594,7 @@
     $(document).ready(function(){
     $('#input.timepicker').timepicker({});
    
-});
+    });
   
   $('.timepicker').timepicker({
     timeFormat: 'H:mm',
@@ -569,6 +647,17 @@ $(".decreaseQty").on('click', function(){
 		$parentElm.find(".qtyValue").val(value);
 	});
 </script>
+<script>
+  var input = document.querySelector("#phone");
+  var iti = window.intlTelInput(input, {
+  // separateDialCode:true,
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
+   });
+  // store the instance variable so we can access it in the console e.g. window.iti.getNumber()
+   window.iti = iti;
+
+</script>
+
 </body>
 
 </html>

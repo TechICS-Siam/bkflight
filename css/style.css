@@ -76,24 +76,34 @@ body{
 .mx-auto.row.topbar-row {
   width: 80%;
 }
-
+.logowdt{
+  padding-left: 15px;
+}
 .logo_img {
   display: block;
+  width: 68%;
+  border: 1px solid #2c2a2d;
+  border-bottom: 0;
+  border-top: 0;
+  box-shadow: 0px 1px 7px 1px rgb(0,0,0,.3);
 }
 
 .topbar_right {
   margin: auto;
   justify-content: flex-end;
 }
-
+.tolink-auto{
+  margin: auto 0;
+}
 .topbar_right li{
   padding: 0px 6px;
 }
 
 .topbar_right li a{
   color: #fff;
-  font-size: 23px;
+  font-size: 20px;
 }
+
 .topbar_right li a:hover{
   color: #f2f2f2;
 }
@@ -102,7 +112,7 @@ body{
 /* navbar section */
 
 nav{
-  height: 6rem;
+  height: 5rem;
   width: 100%;
   background-color: #0A1641;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -113,6 +123,7 @@ nav{
 }
 
 /*Styling logo*/
+
 .logo{
   padding:1vh 1vw;
   text-align: center;
@@ -136,7 +147,7 @@ nav{
   text-decoration: none;
   margin: 0 0.7vw;
   color: #D9F5FD;
-  font-size: 23px;
+  font-size: 22.2px;
   text-transform: capitalize;
   cursor: pointer;
 }
@@ -661,7 +672,7 @@ nav{
 .galler_image_tile{
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 44%;
   transform: translate(-6%, -13%);
 }
 .galler_image_tile h2{
@@ -803,6 +814,124 @@ nav{
 
 
 /* aircraft_directory_page */
+/* air ambulance page */
+.image_bnr_amb{
+  position: relative;
+}
+.imageamb_d{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.imageamb_d h6{
+    font-size: 31px;
+    color: #fff;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1.1px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    text-align: center;
+    background-color: #00000063;
+    padding: 30px 0px;
+}
+.imageamb_d h1{
+  font-size: 1rem;
+  font-size: 85px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400 !important;
+  text-align: center;
+  background-color: #00000063;
+  padding: 20px 46px;
+}
+.mybaner{
+  background-image: url(../images/bg_banner.png);
+  background-repeat: repeat;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+
+}
+
+
+.mybaner_img{
+  vertical-align: middle;
+  border-style: none;
+  filter: contrast(1.4);
+}
+.title_head_amb{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(170, 143, 143);
+}
+
+.text_airabm_amb{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(170, 143, 143);
+  padding: 13px;
+}
+.textp_airabm_amb{
+  font-weight: 400;
+  color: rgb(170, 143, 143);
+}
+.ul_list_airamb li{
+  padding: px 0px;
+}
+.ul_list_airamb li p {
+  font-size: 13px;
+}
+.btnqutrs{
+  background-color: #0a1641;
+  padding: 0;
+  color: #fff;
+}
+.bg-fndb-in{
+  background-color:#0a1641;
+  padding: 14px;
+}
+.bg-sndb-in{
+  background-color: #15286b;
+  transform: skewX(20deg, 0);
+ padding: 12px 0px 12px 30px;
+}
+.bg-sndb-in::before{
+  position: relative;
+  right: 15px;
+ 
+}
+.btnqutrs:hover{
+  color: floralwhite;
+}
+
+
+/* air ambulance page */
+/* about us page */
+.bg-secondary{
+  position: relative;
+  z-index: 2;
+}
+.bg-secondary::after {
+  content: '';
+  position: absolute;
+  transform: skewX(-20deg);
+  /* transform: scaleX(19); */
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 119px;
+  z-index: -1;
+  background-color: #aa66cc;
+  height: 100%;
+}
+/* about us page */
+
 
 /* news list section */
 
@@ -1016,6 +1145,9 @@ nav{
     font-size: 15px;
     font-weight: 500;
   }
+  .tolink-auto{
+    padding: 0px 15px !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 412px) {
   .logo_img{
@@ -1087,6 +1219,9 @@ nav{
     color: #fff;
     font-size: 15px;
     font-weight: 500;
+  }
+  .tolink-auto{
+    padding: 0px 15px !important;
   }
 }
 

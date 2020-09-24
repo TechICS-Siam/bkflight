@@ -819,10 +819,11 @@ nav{
   position: relative;
 }
 .imageamb_d{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: fit-content;
 }
 .imageamb_d h6{
     font-size: 31px;
@@ -848,6 +849,7 @@ transform: translate(-50%, -50%);
   background-color: #00000063;
   padding: 20px 46px;
 }
+
 .mybaner{
   background-image: url(../images/bg_banner.png);
   background-repeat: repeat;
@@ -910,14 +912,95 @@ transform: translate(-50%, -50%);
   color: floralwhite;
 }
 
-
 /* air ambulance page */
+/* aircraft management */
+.carousel-item_magmt{
+  height: 700px;
+}
+
+.bg-managemnt{
+  position: relative;
+  background-color: #fff;
+}
+.bg-managemnt::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 78%;
+  bottom: 43%;
+  left: 0;
+  transform: skewY(17deg);
+  background-color: #fff;
+  box-shadow: 7px -10px 7px 5px rgb(0,0,0,.3);
+  border-top: 4px solid #949596;
+}
+.bg-managemnt::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 78%;
+  bottom: 43%;
+  right: 0;
+  transform: skewY(-17deg);
+  right: 0;
+  background-color: #fff;
+  box-shadow: 12px -12px 18px -8px rgb(0,0,0,.4);
+  border-top: 4px solid #949596;
+
+}
+.management_snd_t{
+  z-index: 1;
+}
+.management_snd_t h5{
+  font-weight: 500;
+  padding: 10px 0px;
+}
+.management_snd_t p{
+  font-weight: 400;
+}
+.imageamgt_d{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: fit-content;
+}
+.imageamgt_d h1{
+    font-size: 1rem;
+    font-size: 85px;
+    color: #fff;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    font-weight: 600 !important;
+    text-align: center;
+    background-color: #00000080;
+    padding: 20px 46px;
+  }
+  .air_managesug{
+    z-index: 1;
+  }
+  .air_managesug span i{
+    color: rgb(177, 2, 2);
+    font-size: 50px;
+  }
+  .air_managesug h3{
+    font-weight: 500;
+    padding: 20px 0px;
+  }
+  .air_managesug p{
+    font-weight: 500;
+  }
+/* aircraft management */
+
 /* about us page */
-.bg-secondary{
+
+.bg-aboutus{
+  background-color: #0a1641;
   position: relative;
   z-index: 2;
+  box-shadow: 4px 4px 8px 5px rgb(0,0,0,.3);
 }
-.bg-secondary::after {
+.bg-aboutus::after {
   content: '';
   position: absolute;
   transform: skewX(-20deg);
@@ -925,13 +1008,29 @@ transform: translate(-50%, -50%);
   display: block;
   width: 100%;
   top: 0;
-  left: 119px;
+  left: 85px;
   z-index: -1;
-  background-color: #aa66cc;
+  background-color:#0a1641;
   height: 100%;
+  box-shadow: 13px 4px 8px 5px rgb(0,0,0,.3);
+}
+.bg-aboutus h3{
+  color: #fff;
+}
+.bg-aboutus p{
+  color: #fff;
 }
 /* about us page */
+/* contact us */
 
+.starbg i{
+   background-color:#0a1641;
+   padding: 1px 3px;
+   border-radius: 3px;
+   color: #fff;
+}
+
+/* contact us */
 
 /* news list section */
 
@@ -1148,6 +1247,9 @@ transform: translate(-50%, -50%);
   .tolink-auto{
     padding: 0px 15px !important;
   }
+  .logowdt{
+    padding-left: 0px;
+  }
 }
 @media (min-width: 320px) and (max-width: 412px) {
   .logo_img{
@@ -1222,6 +1324,9 @@ transform: translate(-50%, -50%);
   }
   .tolink-auto{
     padding: 0px 15px !important;
+  }
+  .logowdt{
+    padding-left: 0px;
   }
 }
 

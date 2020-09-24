@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quantum Aviation</title>
+  <title>Welcome to Quantum Aviation Services | Your First Choice in Private Aviation </title>
   <!-- title icon -->
   <link rel="icon" href="images/quantum_fav.gif" type="image/x-icon/gif" sizes="180×180">
   <!-- animated css -->
@@ -41,7 +41,7 @@
         </div>
         <div class="col-lg-5 col-sm-12 tolink-auto p-0">
           <ul class="d-flex list-unstyled topbar_right row justify-content-between">
-            <li class="col-4 "><a href="tel:+44 2039 30 3438">+44 2039303438 &nbsp; |</a></li>
+            <li class="col-4 "><a href="tel:+442039303438">+44 2039303438 &nbsp; |</a></li>
             <li class="col-6"><a href="mailto:info@quantum-aviation.co.uk">info@quantum-aviation.co.uk &nbsp; |</a></li>
             <li class="col-2"><a href="">Search</a></li>
           </ul>
@@ -57,13 +57,13 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="#">About us &nbsp; |</a></li>
+        <li><a href="about_us.html">About us &nbsp; |</a></li>
         <li><a href="#">Aircraft Charter &nbsp; |</a></li>
-        <li><a href="#">Air Ambulance &nbsp; |</a></li>
-        <li><a href="#">Aircraft Management &nbsp; |</a></li>
+        <li><a href="air_ambulance.html">Air Ambulance &nbsp; |</a></li>
+        <li><a href="air_ambulance.html">Aircraft Management &nbsp; |</a></li>
         <li><a href="#">Operational support &nbsp; |</a></li>
-        <li><a href="#">Aircraft directory &nbsp; |</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="aircraft_directory.html">Aircraft directory &nbsp; |</a></li>
+        <li><a href="contact.html">Contact us</a></li>
 
       </ul>
     </nav>
@@ -71,12 +71,23 @@
   <!-- main navbar -->
 <!-- about us page -->
 <section>
-    <div class="">
+    <div class="my-5">
+      <div class="row mx-auto my-5">
+        <div class="col-md-6 mx-auto">
+          <h5 class=" text-center">
+            Quantum Aviation
+          </h5>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia veniam dolorum voluptatum cum autem velit!
+            nsectetur adipisicing elit. Odit mollitia veniam dolorum voluptatum cum autem velit!
+          </p>
+        </div>
+      </div>
         <div class="row mx-auto">
             <div class="col-lg-5 p-0">
-                <div class="bg-secondary ">
+                <div class="bg-aboutus">
                      <h3 class="p-4">Abou Us</h3>
-                     <p class="p-4">
+                     <p class="p-4 text-justify">
                         Quantum Aviation Services, why choose us? Quantum Aviation Services is an aircraft charter and management company drawing from decades of collective staff experience in the commercial aviation industry.  Relatively small in size with two offices in the United Kingdom [London and East Midlands Airport] we aim to keep overheads low so that we maintain a stable business model, and for the client, be competitive on price.  
                         <br><br>
                         We have no intention to grow to an unreasonable size as our experience tells us the bigger you get, the harder it is to maintain service levels.  Our employees are commercial pilots, senior managers, and current commercial flight dispatchers.
@@ -298,16 +309,7 @@
       $parentElm.find(".qtyValue").val(value);
     });
   </script>
-  <script>
-    var input = document.querySelector("#phone");
-    var iti = window.intlTelInput(input, {
-      // separateDialCode:true,
-      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
-    });
-    // store the instance variable so we can access it in the console e.g. window.iti.getNumber()
-    window.iti = iti;
 
-  </script>
 
 </body>
 

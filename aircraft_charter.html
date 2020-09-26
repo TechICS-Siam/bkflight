@@ -71,46 +71,56 @@
     </nav>
   </section>
   <!-- main navbar -->
-<!-- about us page -->
+<!-- operational support -->
+
 <section>
-    <div class="my-5">
-      <div class="row mx-auto my-5">
-        <div class="col-md-6 mx-auto">
-          <h4 class=" text-center title_head_amb ">
-            Quantum Aviation
-          </h4>
-          <p class="text-center textp_airabm_amb">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia veniam dolorum voluptatum cum autem velit!
-            nsectetur adipisicing elit. Odit mollitia veniam dolorum voluptatum cum autem velit!
-          </p>
-        </div>
-      </div>
+    <div class="container my-5">
         <div class="row mx-auto">
-            <div class="col-lg-5 p-0">
-                <div class="bg-aboutus">
-                     <h3 class="p-4">About Us</h3>
-                     <p class="p-4 text-justify">
-                        Quantum Aviation Services, why choose us? Quantum Aviation Services is an aircraft charter and management company drawing from decades of collective staff experience in the commercial aviation industry.  Relatively small in size with two offices in the United Kingdom [London and East Midlands Airport] we aim to keep overheads low so that we maintain a stable business model, and for the client, be competitive on price.  
-                        <br><br>
-                        We have no intention to grow to an unreasonable size as our experience tells us the bigger you get, the harder it is to maintain service levels.  Our employees are commercial pilots, senior managers, and current commercial flight dispatchers.
-                        <br><br>
-                        From making your request you will have one point of contact who will walk you through the process and provide options to suit your preferences. We believe it is this personal touch that separates us from the competition. 
-                        <br><br>
-                        “LARGE ENOUGH TO KNOW, SMALL ENOUGH TO CARE”
-                     </p>
-                </div>
-            </div>
-            <div class="col-lg-7 p-0">
-                <div class="">
-                    <img src="images/Citation XLS.jpg" width="100%" height="470px" alt="">
-                </div>
-            </div>
+         <div class="col-lg-12 col-sm-12">
+             <p class="">
+                <b>Global Coverage:</b> Need a flight from Phnom pehn to London, Sydney to San Francisco, or Paris to Ibiza? Our international contacts work with us to ensure your trip goes well.  We are connected.
+              
+                
+             </p>
+          
+             <p class="">
+                <b>Pricing:</b> Our low cost business model allows us to find you the best private jet charter prices, ensuring your pricing are we offer is the most competitive in today’s market.
+             </p>
+             <p class="">
+                <b>Sourcing of aircraft:</b> Obviously with a flight from Sydney to San Francisco you would need an ultra long haul aircraft, Paris to Ibiza possibly a light jet.  It’s the client’s choice.  We shall always source you the cheapest options and provide expert advice for your needs, up to and including full size VVIP passenger aircraft if needed.
+             </p>
+             <p class="">
+                <b>Safety Conscious:</b> We only operate with aircraft that meet the exacting standards of the UK Civil Aviation Authority, the most highly regulating governing body in the world.
+             </p>
+             <p class="">
+                <b>No Obligation: </b> We are not a hard sell operator / no high pressure sales.
+             </p>
+             <p class="">
+                <b>Empty Legs:</b>  When Quantum Aviation Services has a one-way charter, the aircraft is often without passengers when it repositions back to its base, or on to another global location. These are known as 'Empty Legs', and they are available at savings of up to 75% of the cost of a regular charter.  Please view what “live” non passenger fights [empty legs] we have on offer today.
+             </p>
+             <p class="">
+                With a comprehensive global network of accredited aircraft operators, QAS will provide an effective solution in a timely and cost effective manner.
+             </p>
+
+             <h4 class="py-3">
+                What makes QAS different?
+             </h4>
+        
+
+
+             <p class="">
+                From making your request you will have one point of contact that will walk you through the process and provide options to suit your preferences. We believe it is this personal touch that separates us from the competition. 
+                <br><br>
+                We are a small and agile company with the kind of flexibility and personal touch with we believe is lacking in the industry. We are available 24/7 through any medium of communication you prefer.
+                
+             </p>
+         </div>
         </div>
     </div>
 </section>
 
-<!-- about us page -->
 
+<!-- operational support -->
   <!-- footer section -->
   <section>
     <div class="bg-footer">
@@ -224,6 +234,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/intlTelInput.js"></script>
+  
   <script type="text/javascript">
     AOS.init({
       offset: 300,
@@ -318,7 +329,47 @@
     });
   </script>
 
+<script>
+   $(document).ready(function () { 
+    $('a[href^="#"]').click(function(event) {
+		var id = $(this).attr("href");
+		var target = $(id).offset().top;
+		$('html, body').animate({scrollTop:target}, 500);
+		event.preventDefault();
+	});
 
+function getTargetTop(elem){
+	var id = elem.attr("href");
+	var offset = 0;
+	return $(id).offset().top - offset;
+}
+
+});
+
+</script>
+<script>
+    $(document).ready(function () { 
+
+    var sections = $('a[href^="#"]');
+
+function isSelected(scrolledTo){
+   
+	var threshold = 0;
+	var i;
+
+	for (i = 0; i < sections.length; i++) {
+		var section = $(sections[i]);
+		var target = getTargetTop(section);
+	   
+		if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
+			sections.removeClass("active");
+			section.addClass("active");
+		}
+
+	};
+}
+});
+</script>
 </body>
 
 </html>

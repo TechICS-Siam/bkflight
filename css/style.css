@@ -69,6 +69,58 @@ body{
 /* top backgroung image */
 
 /* top bar  */
+a.search-icon{
+  text-decoration: 
+  none; color: red; 
+  margin: 10px;
+}
+.search-bar{
+  display:none; 
+  background-color: #00385b; 
+  color: #FFF; 
+}
+
+.search-form input[type="search"]{
+  border:none; 
+  width: 97%; 
+  font-size: 30px; 
+  padding: 10px; 
+  background-color: #00385b; 
+  color: #FFF; 
+}
+.search-form input[type="search"]:focus{
+  outline: none;
+} 
+
+.search-form input[type="submit"]{
+  background-color: #062d46; 
+  border:none; color: #FFF; 
+  padding: 15px; width: 10%; 
+  border-radius: 20px; 
+  font-size: 20px; 
+  cursor: pointer;
+}
+
+.search-form input[type="submit"]:focus{
+  outline: none;
+}
+.search-form input[type="submit"]:active{
+  background-color: #31961f;
+}
+.searchbtn{
+  border: none;
+  background-color: transparent;
+  
+}
+
+.searchbtn:focus{
+ outline: none;
+  
+}
+
+.searchbtn i{
+color: #757575;
+}
 .topbar-bg {
   background-color: #46344E;
 }
@@ -719,8 +771,6 @@ nav{
   margin-left: 0;
   -transition: all 2s !important;
   -webkit-transition: all 2s !important;
-
-
 }
 .btn-mybtn:hover{
   color: rgb(0, 0, 0); 
@@ -736,7 +786,13 @@ nav{
 .liner_bttom{
   border-top: 6px solid #385D8A;
 }
-
+.contact_ltexta li{
+  padding: 5px 0px ;
+}
+.contact_ltexta li a{
+  color: #000;
+  font-size: 15px;
+}
 /* contact us */
 /* footer section */
 .bg-footer{
@@ -1346,15 +1402,5 @@ nav{
   ##Screen = B/w 320px to 479px
 */
 
-.box_height_sr{
- height: 200px;
-}
-.slidenav li{ 
-  height: 20px;
-  margin: 20px 0px;
-  list-style: none;
-}
-.slidenav a{
-  text-indent: -9999px;
-  transition: all 0.3s ease;
-}
+
+
